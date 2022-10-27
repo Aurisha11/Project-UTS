@@ -1,0 +1,129 @@
+:root {
+  /* Nek arep rubah warna otak-atik bagian iki */
+  --primary: #6c5d46;
+  --secondary: #fbf3db;
+  --semi-blue: #adcdcb;
+  --dark-blue: #a1c2bb;
+  --brown: #baae94;
+  --gray: #baae94;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url("Quicksand-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  letter-spacing: 4px;
+}
+
+i {
+  margin-right: 5px;
+}
+
+body {
+  font-family: Quicksand, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--primary);
+}
+
+main {
+  color: var(--secondary);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article > img {
+  /* ukuran gambar logo */
+  width: 50%;
+  height: auto;
+}
+
+.accordion {
+  /* tulisan pilihan menu sebelah kiri */
+  text-align: left;
+  /* ukuran lebar */
+  width: 70%;
+  /* ukuran tinggi tombol pilihan menu */
+  height: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  background: var(--dark-blue);
+  color: var(--secondary);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: Quicksand, sans-serif;
+  cursor: pointer;
+  padding-left: 15px;
+  transition: 0.4s;
+
+  margin-top: 50px;
+}
+
+.active,
+.accordion:hover {
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+.panel {
+  margin-top: 5px;
+  width: 50%;
+}
+
+.card {
+  /* border: 1px solid var(--semi-blue); */
+  display: flex;
+  background: var(--semi-blue);
+  color: var(--primary);
+
+  margin-bottom: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: var(--secondary);
+}
+
+.foto-produk {
+  /* Setting ukuran foto produk otak-atik width e */
+  width: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card > div {
+  /* jarak sebelah kiri antara gambar karo tulisan produk */
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card div > h3 {
+  /* Ukuran tulisan merk produk */
+  font-size: 50px;
+}
+
+.keterangan {
+  /* ukuran tulisan  deksripsi produk */
+  font-size: 50px;
+}
+
+.harga {
+  font-size: 50px;
+  font-weight: bold;
+}
